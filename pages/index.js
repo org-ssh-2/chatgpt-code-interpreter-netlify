@@ -10,8 +10,7 @@
 <body>
     <header>
         <h1>ChatGPT Meets Code Interpreter: A New Era in Coding</h1>
-        <h2>Andrew Mayne's Discoveries</h2>
-        <h3>Dated: March 23, 2023</h3>
+        <h3>Dated: June 07, 2023</h3>
     </header>
     <main>
         <p>OpenAI is set to revolutionize the coding landscape with the introduction of plugins into its popular ChatGPT. These tools, including familiar names like WolframAlpha and OpenTable, complement the existing Code Interpreter and browser plugin, boosting ChatGPT's functionality. This extends to the ability to generate and execute code, as well as manage files of varying types, all within its intuitive interface. Currently, Python is supported, coupled with a set of select libraries.</p>
