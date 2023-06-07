@@ -1,66 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+import Head from 'next/head'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT Meets Code Interpreter: A New Era in Coding</title>
-</head>
+export default function Home() {
+  return (
+    <div className="container">
+      <Head>
+        <title>ChatGPT Code Interpreter</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-<body>
-    <header>
-        <h1>ChatGPT Meets Code Interpreter: A New Era in Coding</h1>
-        <h3>Dated: June 07, 2023</h3>
-    </header>
-    <main>
-        <p>OpenAI is set to revolutionize the coding landscape with the introduction of plugins into its popular ChatGPT. These tools, including familiar names like WolframAlpha and OpenTable, complement the existing Code Interpreter and browser plugin, boosting ChatGPT's functionality. This extends to the ability to generate and execute code, as well as manage files of varying types, all within its intuitive interface. Currently, Python is supported, coupled with a set of select libraries.</p>
-        <p><a href="https://sites.google.com/view/chatgpt-code-interpreter">ChatGPT Code Interpreter</a> redefines code generation by also analysing the output of each function, enabling the subsequent function to use it. This principle was applied to create a Pac-Man gif, which was the result of a series of interconnected code sections.</p>
-        <h2>Adventures with the Code Interpreter Plugin</h2>
-        <h3>Auditory Explorations</h3>
-        <p>Capitalizing on ChatGPT's mathematical understanding and CI's ability to create downloadable content, a Shepard tone, the illusion of an ever-ascending pitch, was successfully crafted. The next achievement was turning Conway's Game of Life into a musical piece, which was made more melodious by implementing a pentatonic scale.</p>
-        <figure>
-            <figcaption>Shepard Tone</figcaption>
-        </figure>
-        <figure>
-            <figcaption>Conway's Game of Life as Music</figcaption>
-        </figure>
-        <h3>Image Manipulations</h3>
-        <p>With the power of the OpenCV library and a face detection algorithm (Haar Cascade Classifier), CI spotted a face within an image. It further proved its prowess by transforming an image into its ASCII equivalent.</p>
-        <figure>
-            <figcaption>Facial Recognition with OpenCV</figcaption>
+      <main>
+        <Header title="Welcome to ChatGPT Code Interpreter!" />
+        <p className="description">
+          ChatGPT Code Interpreter is a new tool developed by OpenAI that allows ChatGPT to understand and interact with various programming languages. The plugin is still in its alpha phase, but it has already shown a lot of potential for developers, scientists, and engineers. 
+        </p>
 
-        </figure>
-        <figure>
-            <figcaption>Image and its ASCII transformation</figcaption>
+        <h2 className="subtitle">Features of ChatGPT Code Interpreter</h2>
+        <ul>
+          <li>Solving mathematical problems</li>
+          <li>Performing data analysis and visualization</li>
+          <li>Converting files between formats</li>
+          <li>Visualizing data and creating GIFs</li>
+          <li>Cleaning data and generating insights</li>
+          <li>Converting files to different formats quickly</li>
+        </ul>
 
-        </figure>
-        <h3>Adventures with QR Codes</h3>
-        <p>In a testament to its capabilities, ChatGPT successfully created a functional QR code and even a Game of Life simulation culminating in a QR code.</p>
-        <figure>
-            <figcaption>Constructed QR code</figcaption>
-        </figure>
-        <h3>Animated Creations</h3>
-        <p>CI flexed its creative muscle by generating a series of animated gifs, including a bouncing block, a snow flurry, and a Game of Life session. A vectorized cube was also attempted.</p>
-        <figure>
-            <figcaption>Bouncing Block, Snow Shower, Game of Life, Vector Cube</figcaption>
-        </figure>
-        <h3>OCR and Calendar Innovations</h3>
-        <p>CI confirmed its Optical Character Recognition (OCR) capabilities by successfully identifying a screen grab from a website. It also showcased its ability to generate calendar invites in plain text and then convert it into an .ics file.</p>
-        <h3>Creativity in Drawings</h3>
-        <p>ChatGPT exhibited its creativity by generating block images of a cat, and then a cat adorned with a blue top hat and pipe.</p>
-        <figure>
-            <figcaption>Artistic Creations: A Cat, A Cat with a Hat and Pipe</figcaption>
-        </figure>
-        <h3>Machine Learning Models</h3>
-        <p>CI, although without access to any machine learning libraries, demonstrated the ability to perform basic statistical text generation using n-grams, using a given book for training.</p>
-        <h3>Simulation Capabilities</h3>
-        <p>The CI's simulation capacity was pushed to the limit, with creations of a maze with an escaping dot styled as Pac-Man, the orbits of the inner planets, and virtual games of checkers and chess.</p>
-        <figure>
-            <figcaption>Pac-Man Maze, Orbital Simulation, Checkers, Chess</figcaption>
-        </figure>
-        <h2>Conclusion</h2>
-        <p>As <a href="https://docs.kanaries.net/articles/chatgpt-code-interpreter">ChatGPT Code Interpreter</a> become increasingly available, we can expect a plethora of unique applications. This is just the beginning of a new chapter in the world of coding.</p>
-    </main>
-</body>
+        <h2 className="subtitle">Availability and Pricing</h2>
+        <p className="description">
+          ChatGPT plugins, including the <a href="https://sites.google.com/view/chatgpt-code-interpreter">ChatGPT Code Interpreter</a>, are only available to ChatGPT Plus users who pay $20 a month and can currently only be accessed via a waitlist. Other popular ChatGPT plugins include Zapier, FiscalNote, Wolfram, OpenTable, Speak, Expedia, KAYAK, and Instacart. 
+        </p>
 
-</html>
+        <h2 className="subtitle">Potential Applications</h2>
+        <p className="description">
+          With the flexibility and versatility of <a href="https://docs.kanaries.net/articles/chatgpt-code-interpreter">ChatGPT Code Interpreter</a>, users can develop a wide range of applications. The plugin can generate Pac-Man GIFs with a maze algorithm, visualize information through spreadsheets, perform OCR and restore older documents, and generate block images, among many others. As more users get access to ChatGPT and the Code Interpreter plugin, more innovative applications will come to light.
+        </p>
+        <h2 className="subtitle">Learn More</h2>
+        <div className="iframe-container">
+            <iframe src="https://docs.kanaries.net/articles/chatgpt-code-interpreter" title="ChatGPT Code Interpreter"></iframe>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
